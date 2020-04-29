@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/768d215a85.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Kahfi Travel</title>
+        <link rel="stylesheet" href="kahfi-resort1.css">
+        <link rel="shortcut icon" href="image/kahfi-favicon.png" type="image/icon">
+    </head>
+    <body>
+        <!--header-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#package">Package</a>
+            <a href="Promo.html">Promo</a>
+            <div class="dropdown">
+              <button class="dropbtn">More
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="Sign.html">Sign Up</a>
+                <a href="Login.html">Login</a>
+                <a href="FAQ.html">FAQ</a>
+              </div>
+            </div> 
+             <!--Javascript for clicking the icon when it stays in width 768px-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>            
+        <!--Menu for Content-->
+        <div class="menu">
+               <!--Showslide menu-->
+            <div class="slide fade">
+              <img src="image/balun1.jpg" alt="">
+              <div class="caption">Welcome to Kahfi</div>
+            </div>
+            <div class="slide fade">
+              <img src="image/balun2.jpg" alt="">
+              <div class="caption">The Greatest Tour Travel in Turkey</div>
+            </div>
+            <div class="slide fade">
+              <img src="image/balun3.jpg" alt="">
+              <div class="caption">Let's take a vacation with us</div>
+            </div>
+            <!--Giving space for the slide show-->
+            <div id="style">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="teks">
+                <h3 id="teks1">About Kahfi</h3>
+                <p>
+                    Kahfi is a Turkish online travel service
+                    that inspires and supports people to travel<br>
+                    and was launched on May 6, 2013,
+                    by Mr. Ahmad Al-Kindi and Mr. Ali Al-Farizi.<br>
+                    <br><br>
+                    Kahfi provides booking services at more than 100,000 domestic and foreign hotels,<br>
+                    airplane tickets, and tour packages to meet the increasing needs of community tourism.<br>
+                    In addition, Kahfi also provides several promos including holiday package promos <br>
+                    and flight tickets.<br>
+                </p>
+            </div>
+        </div>  
+        
+        <!--Footer for Home-->
+        <div class="footer">
+            <div id="symbol1">
+                Copyright &copy; 2015
+            </div>
+            <div id="symbol2">
+                Powered by MK-Creative
+            </div>
+            <div class="fa-fa-font">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+
+         <!--Toggle between adding and removing the "responsive" class to topnav 
+            when the user clicks on the icon-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+        </script>
+        <!--Javascript Slideshow-->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName('slide');
+                var dots = document.getElementsByClassName('dot');
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                } 
+                slideIndex++;
+                if (slideIndex> slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active","");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+    </body>
+</html>

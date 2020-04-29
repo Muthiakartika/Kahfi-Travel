@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/768d215a85.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Kahfi Travel</title>
+        <link rel="stylesheet" href="kahfi-resort1.css">
+        <link rel="shortcut icon" href="image/kahfi-favicon.png" type="image/icon">
+    </head>
+    <body>
+        <!--Header-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#package">Package</a>
+            <a href="Promo.html">Promo</a>
+            <div class="dropdown">
+              <button class="dropbtn">More
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="Sign.html">Sign Up</a>
+                <a href="Login.html">Login</a>
+                <a href="FAQ.html">FAQ</a>
+              </div>
+            </div> 
+            <!--Javascript for clicking the icon when it stays in width 768px-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <!--Menu-->
+        <div class="menu-faq">
+            <h2>Kahfi FAQ</h2>
+            <!--Adding blockquote style-->
+            <blockquote class="styled-blockquote">
+                <i>This FAQ provides answer to basic question about Kahfi.</i>
+            </blockquote>
+            <!--Dropdown style for FAQ-->
+			<ul class="faq-container">
+				<li>
+					<label for="q1">How to Pay for My Booking</label> <input name="question" id="q1" type="checkbox" value="">
+				    <div class="answer">
+						<p>Pay for your booking by following these steps:<br>
+                            1. After completing your booking details, select your preferred payment method.<br>
+                            2. Tap the Pay with button.<br>
+                            Please make sure to settle your payment before the time limit expires.<br>
+                            To check how much time you have left to settle your payment, go to Purchase List.<br>
+                        </p>
+					</div>
+				</li>
+				<li>
+					<label for="q2">Paying by Bank Transfer</label> <input name="question" id="q2" type="checkbox" value="">
+					<div class="big">
+						<p>To pay using the Transfer method, follow these steps:<br>
+                            1. Tap Pay With Transfer after choosing your bank.<br>
+                            2. Please complete your payment before the time limit expires.<br>
+                            3. The time limit is located on the Complete Payment page.<br>
+                            4. Choose Transfer in your bank menu.<br>
+                            5. Transfer can be done via ATM, mobile banking, or online banking.<br>
+                            6. Fill in Kahfi account number.<br>
+                            7. Then, enter the payment amount exactly as stated on your invoice to the last three digits.<br>
+                            8. Fill your Booking ID in the reference number field on the ATM or online banking/m-banking.
+                        </p>
+					</div>
+				</li>
+				<li>
+					<label for="q3">How to Pay for My Booking with ATM</label><input name="question" id="q3" type="checkbox" value="">
+					<div class="answer1">
+						<p>To pay for your booking with ATM, follow these steps:<br>
+                            1. After you’ve completed your booking details, choose ATM on the payment page.<br>
+                            2. Tap Pay with ATM.<br>
+                            3. Make sure to enter the correct bank code, Traveloka bank account number,<br>
+                            4. and exact transaction amount, then proceed with the transfer.<br>
+                            5. Payment with ATM is available 24/7.<br>
+                        </p>
+					</div>
+				</li>
+				<li>
+					<label for="q4">How to Pay for My Booking with a Credit Card</label> <input name="question" id="q4" type="checkbox" value="">
+					<div class="answer">
+						<p>
+                            To pay for your booking with a credit card, follow these steps:<br>
+                            1. After you’ve completed your booking details, choose Credit Card on the payment page.<br>
+                            2. Fill in your credit card details, then tap Pay with Credit Card.<br>
+                            3. Once your credit card payment is completed, you will receive your e-ticket/voucher on the email address 
+                            you used for booking within 60 minutes.<br>
+                        </p>
+					</div>
+                </li>
+    		</ul>
+            <div class="question">      
+                <b id="other-question">Require more assistance? We’re here to help.</b>
+               <div class="con-email"><i class="fa fa-envelope-o"></i>Support@kahfi.com</div>
+                <br>
+                <div class="con-telp"><i class="fa fa-phone"></i>+90 464646</div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div id="symbol1">
+                Copyright &copy; 2015
+            </div>
+            <div id="symbol2">
+                Powered by MK-Creative
+            </div>
+            <div class="fa-fa-font">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+        <!--Toggle between adding and removing the "responsive" class to topnav 
+            when the user clicks on the icon-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
