@@ -1,0 +1,790 @@
+body{
+    margin:0px;
+    background: #FFE5B7;
+}
+.topnav {
+  background-color: #C0954C;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active {
+  background-color: #BC986A;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFE2B2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFF0D8;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:#FFF0D8;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: fixed;}
+.topnav.responsive .dropdown .dropbtn {
+display: block;
+width: 100%;
+text-align: left;
+}
+/*Menu page Home*/
+.menu {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  height: auto;
+}
+.menu img {
+  width: 100%;
+  height: 450px;
+  margin: left;
+}
+.menu .caption, .caption1, .caption2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  text-decoration: wavy;
+  color: #fff;
+  text-align: center;
+  margin-top: -250px;
+}
+.menu .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.menu #style{
+  text-align: center;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4;}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.menu .teks{
+  text-align: center;
+  margin-top: 260px;  
+}
+.menu .teks #teks1{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  border: 2px solid #C0954C;
+  width: 170px;
+  height: 20px;
+  position: absolute;
+  top: 450px;
+  padding: 10px;
+  margin-left: 600px;
+  background-color: #C0954C;
+}
+.menu .teks p{
+  color: #C0954C;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  text-align: justify;
+  position: absolute;
+  top: 550px;
+  margin-left: 200px;
+}
+/*Menu Page Promo*/
+.Promo h1{
+  color: #C0954C;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+}
+.Promo p{
+  color: #C0954C;
+  font-family: "Raleway SemiBold", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.Promo .square-promo-1{
+  width: 350px;
+  height: 510px;
+  border: 1px solid #C0954C;
+  background-color: #FFFF;
+  margin-top: 30px;
+  margin-left: 50px;
+  float: left;
+}
+.Promo .square-promo-1 #image1{
+  width: 350px;
+  height: 350px;
+}
+.Promo .square-promo-1 p{
+  font-size: 18px;
+  color: #C0954C;
+  text-align: center;
+}
+.Promo .square-promo-1 button{
+  background:#FFE2B2;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #C09544;
+  cursor: pointer;
+  color: #c0954c;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: -1px;
+  transition: 0.25s;
+  width: 153px;
+}
+.Promo .square-promo-1 button:hover{
+  box-shadow: 0px 1px 18px #FFE2B2;
+}
+.Promo .square-promo-2{
+  width: 350px;
+  height: 510px;
+  border: 1px solid #C0954C;
+  background-color: #FFFF;
+  margin-top: 30px;
+  margin-left: 90px;
+  float: left;
+}
+.Promo .square-promo-2 #image2{
+  width: 350px;
+  height: 350px;
+}
+.Promo .square-promo-2 p{
+  font-size: 18px;
+  color: #C0954C;
+  text-align: center;
+}
+.Promo .square-promo-2 button{
+  background:#FFE2B2;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #C09544;
+  cursor: pointer;
+  color: #c0954c;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: 20px;
+  transition: 0.25s;
+  width: 153px;
+}
+.Promo .square-promo-2 button:hover{
+  box-shadow: 0px 1px 18px #FFE2B2;
+}
+.Promo .square-promo-3{
+  width: 350px;
+  height: 510px;
+  border: 1px solid #C0954C;
+  background-color: #FFFF;
+  margin-top: 30px;
+  margin-left: 100px;
+  float: left;
+}
+.Promo .square-promo-3 #image3{
+  width: 350px;
+  height: 350px;
+}
+.Promo .square-promo-3 #p1{
+  font-size: 24px;
+  color: #C0954C;
+  text-align: center;
+  margin-top: 20px;
+}
+.Promo .square-promo-3 #p2{
+  font-size: 20px;
+  color: #C0954C;
+  text-align: center;
+  margin-top: -10px;
+}
+.Promo .square-promo-3 button{
+  background:#FFE2B2;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #C09544;
+  cursor: pointer;
+  color: #c0954c;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: -5px;
+  transition: 0.25s;
+  width: 153px;
+}
+.Promo .square-promo-3 button:hover{
+  box-shadow: 0px 1px 18px #FFE2B2;
+}
+/*menu page Sign in*/
+.menu-right #card{
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 450px;
+  float: right;
+  margin-top: 150px;
+  margin-right: 95px;
+  width: 340px;
+}
+.menu-right #card .one{
+  color: #C0954C;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
+  padding-top: 13px;
+  text-align: center;
+}
+.menu-right #card #two{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+.menu-right #card #Login{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  color: #C0954C;
+  float: right;
+  margin-right: 50px;
+  margin-top: -36px;
+}
+.menu-right #card .form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.menu-right #card label{
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+  padding-top: 2px;
+}
+.menu-right #card .form-content{
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 10px;
+}
+.menu-right #card .form-border{
+  background:#C0954C;
+  height: 1px;
+  width: 100%;
+}
+.menu-right #card form .paragraph{
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 3px;
+  text-align: left;
+}
+.menu-right #card form #submit-btn {
+  background:#FFE2B2;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #C0954C;
+  cursor: pointer;
+  color: #c0954c;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 20px;
+  transition: 0.25s;
+  width: 153px;
+}
+.menu-right #card form #submit-btn:hover {
+  box-shadow: 0px 1px 18px #c0954c;
+}
+.menu-left{
+  float: left;
+}
+.menu-left #logo{
+  width: 600px;
+  height: 500px;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+/*Menu Page Login*/
+.menu-login #card-login{
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 410px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+  padding-top: 100px;
+}
+.menu-login #card-login .one-login{
+  color: #C0954C;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
+  padding-top: 4px;
+  text-align: center;
+  margin-top: -10px;
+}
+.menu-login #card-login .form{
+  display: flex;
+  flex-direction: column;
+}
+.menu-login #card-login label{
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+  padding-top: 2px;
+  margin-left: 10px;
+  color: #C0954C;
+}
+.menu-login #card-login .form-content{
+  background: #fff;
+  border: none;
+  outline: none;
+  padding-top: 10px;
+}
+.menu-login #card-login .form-border{
+  background:#C0954C;
+  height: 1px;
+  width: 100%;
+}
+.menu-login #card-login .form #forgot-pass{
+  color: #C0954C;
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  margin-top: 3px;
+  text-align: right;
+}
+.menu-login #card-login .form a{
+  text-decoration: none;
+}
+.menu-login #card-login .form #signup{
+  color: #C0954C;
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 16px;
+  text-align: center;
+}
+.menu-login #card-login .form #submit-btn-login{
+  background:#FFE2B2;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #C0954C;
+  cursor: pointer;
+  color: #c0954c;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.25s;
+  width: 153px;
+}
+.menu-login #card-login .form #submit-btn-login:hover{
+  box-shadow: 0px 1px 18px #FFE2B2;
+}
+/*Menu FAQ*/
+.menu-faq{
+  margin-left: 80px;
+  padding-top: 10px;
+}
+.menu-faq h2{
+  color: #C0954C;
+  font-size: 35px;
+}
+.menu-faq #kahfi-by{
+  color: #C0954C;
+  font-size: 18px;
+  position: absolute;
+  top: 130px;
+}
+.menu-faq .styled-blockquote{
+  margin: 0;
+  width: 400px;
+  padding: 40px 60px 30px 70px;
+  background: #E9C382;
+  border-left: 12px solid #C0954C;
+  color: #FFFF;
+  text-align: justify;
+  font-size: 20px;
+}
+.menu-faq .faq-container{
+  width: 900px;
+  margin-top: 30px;
+  list-style-type:none;
+  margin-left: -40px;
+ 
+}
+.faq-container li{
+	position:relative;
+	margin:5px 0;
+}
+.faq-container li input{
+	display:none;
+}
+.faq-container li label{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	background: #C0954C;
+	color: #fff;
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px 5px 0 0;
+}
+.faq-container li div{
+	overflow: hidden;
+	height:0px;
+	padding:5px 10px;
+	background:#E9C382;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	border-radius:0 0 5px 5px;
+	color:#f7f7f7;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+}
+.faq-container li div p{margin-top:10px}
+.container li input:checked ~ div{
+	padding-bottom:20px;
+}
+.faq-container li input:checked ~ div.answer{
+	height:140px;
+}
+.faq-container li input:checked ~ div.answer1{
+	height:160px;
+}
+.faq-container li input:checked ~ div.big{
+	height:200px;
+}
+.question{
+  margin-top: 100px;
+
+}
+.question #other-question{
+  color: #C0954C;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.question .con-email{
+  color: #C0954C;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+}
+.question .con-telp{
+  color: #C0954C;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*Footer Css*/
+.footer{
+  height: 90px;
+  line-height: 50px;
+  background-color: #C0954C;
+  color: #fff;
+  position: absolute;
+  top: 1000px;
+  width: 100%;
+}
+.footer #symbol1{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  left: 570px;
+  font-size: 18px;
+}
+.footer #symbol2{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  left: 540px;
+  top: 40px;
+  font-size: 18px;
+}
+.footer .fa-fa-font{
+  font-size: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+/* This is for Ipad Layer*/
+@media screen and (max-width:600px){
+ .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  /*menu in home page*/
+  .menu img{
+    height: 400px;
+  }
+  .menu .caption{
+    font-size: 40px;
+  }
+  .menu .caption1, .caption2{
+    font-size: 40px;
+    margin-top: -275px;
+  }
+  .menu .teks #teks1{
+    font-size: 20px;
+    margin-left: 105px;
+    padding-left: 10px;
+  }
+  .menu .teks p{
+    font-size: 16px;
+    margin-left: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .menu-right #card{
+    margin-right: 75px;
+    width: 320px;
+    height: 430px;
+  }
+  .menu-left #logo{
+    width: 310px;
+    height: 310px;
+    margin-top: 220px;
+    margin-left: 20px;
+  }
+  /*menu for promo page*/
+  .Promo h1{
+    font-size: 18px;
+  }
+  .Promo p{
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  .Promo .square-promo-1{
+    height:250px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+  .Promo .square-promo-2{
+    height:250px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+  .Promo .square-promo-3{
+    height:250px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+  .Promo .square-promo-1 #image1{
+    height: 150px;
+    width: 200px;
+  }
+  .Promo .square-promo-2 #image2{
+    height: 150px;
+    width: 200px;
+  }
+  .Promo .square-promo-3 #image3{
+    height: 150px;
+    width: 200px;
+  }
+  .Promo .square-promo-1 p{
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  .Promo .square-promo-2 p{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .Promo .square-promo-3 #p1{
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .Promo .square-promo-3 #p2{
+    font-size: 12px;
+  }
+  .Promo .square-promo-1 button{
+    margin-left: 38px;
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .Promo .square-promo-2 button{
+    margin-left: 38px;
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+  } 
+  .Promo .square-promo-3 button{
+    margin-left: 27px;
+    width: 145px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  /*Signup page*/
+  .menu-right #card{
+    height: 400px;
+    width: 250px;
+    margin-top: 100px;
+    margin-right: 90px;
+  }
+  .menu-right #card .one{
+    font-size: 16px;
+  }
+  .menu-right #card #two{
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  .menu-right #card #Login{
+    font-size: 12px;
+    margin-right: 30px;
+    margin-top: -31px;
+  }
+  .menu-right #card .form{
+    padding: 5px;
+  }
+  .menu-right #card label{
+    font-size: 14px;
+  }
+  .menu-right #card form #submit-btn {
+    height: 30px;
+    width: 110px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .menu-left #logo{
+    margin-top: -15px;
+    margin-left: 20px;
+    width: 350px;
+    height: 350px;
+
+  }
+  /*FAQ page*/
+  .menu-faq h2{
+    font-size: 25px;
+  }
+  .menu-faq .styled-blockquote{
+    width: 170px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-left: -30px;
+    height: 30px;
+  }
+  .menu-faq .faq-container{
+    width: 320px;
+    margin-left: -80px;
+  }
+  .faq-container li input:checked ~ div.answer{
+    height:300px;
+  }
+  .faq-container li input:checked ~ div.answer1{
+    height:350px;
+  }
+  .faq-container li input:checked ~ div.big{
+    height:430px;
+  }
+  .question #other-question{
+    font-size: 20px;
+    margin-left: -50px;
+  }
+  .question .con-email{
+    margin-left: -10px;
+  }
+  .question .con-telp{
+    margin-left: -10px;
+  }
+  /*Footer*/
+  .footer{
+    height: 80px;
+  }
+  .footer #symbol1{
+    font-size: 16px;
+    margin-left: -435px;
+    margin-top: 5px;
+  }
+  .footer #symbol2{
+    font-size: 16px;
+    margin-left: -430px;
+    margin-top: -9px;
+  }
+  .footer .fa-fa-font{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+}
